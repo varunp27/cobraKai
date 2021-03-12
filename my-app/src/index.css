@@ -11,3 +11,41 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+nav{
+	position: fixed;
+	width: 100%;
+	background-color: black;
+	text-align: center;
+	left: 0;
+	top: 0;
+	z-index: 999999;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+nav h1 {
+  float: left;
+  margin: 0;
+  width: 200px;
+  margin-right: 0;
+  margin-left: 10px;
+  text-align: left;
+  text-decoration: none;
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
+  padding: 0px 5px;
+  display: block;
+  color: #FFF;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+nav ul li {
+	margin: 0;
+    padding: 0;
+    float:left;
+}
