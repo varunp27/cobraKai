@@ -16,6 +16,7 @@ export default class GetStarted extends React.Component {
                 <button>
                     <Link to="/upload">Get Started</Link>
                 </button>
+                <p> swag </p>
 
             </div>
         )
