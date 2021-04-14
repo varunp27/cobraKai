@@ -9,11 +9,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="page-head">Aware</h1>
-        <nav aria-roledescription="navigation">
-            <ul className="links">
-                <li><a className="navLink" href="/">Home</a></li>
-            </ul>
+        <h1 className="page-head"> <a href="/">Aware</a></h1>
+        <nav className="navigation">
+            <a className="navLink" href="/">About Us</a>
+            <a className="navLink" href="/" >Get in Touch</a>
         </nav>
       </header>
       <main>

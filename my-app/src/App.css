@@ -1,5 +1,52 @@
+
 .App {
   background-color: #e5e5e5;
+}
+
+.App-header a:link {
+    text-decoration: none;
+  
+}
+
+a { text-decoration: none; color:black; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+
+.App-header a:visited {
+  text-decoration: none;
+}
+
+.page-head {
+  padding-top: 20px;
+}
+
+.App-header {
+  background-color: #3BEAD1;
+  color: black;
+  margin: 0;
+}
+
+h1 {
+  margin: 0px;
+}
+
+nav{
+	position: fixed;
+	width: 100%;
+  background-color: #3BEAD1;
+  color: black;
+	left: 0;
+	top: 0;
+	margin: 0px;
+
+}
+
+.navLink {
+  padding-right: 10px;
+  float: right;
+  margin: 0px;
 }
 
 .App-logo {
@@ -13,19 +60,7 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
