@@ -3,6 +3,7 @@ import './App.css';
 import Upload from './components/upload';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import GetStarted from './components/GetStarted';
+import Tutorial from './components/Tutorial';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Router>
             <Route exact path = '/' component={GetStarted}/>
             <Route path = '/upload' component = {Upload}/>
+            <Route path = '/tutorial' component = {Tutorial}/>
           </Router>
         </main>
     </div>

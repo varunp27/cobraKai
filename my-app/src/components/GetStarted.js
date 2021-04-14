@@ -14,7 +14,7 @@ export default class GetStarted extends React.Component {
         return (
             <div>
                 <button>
-                    <Link to="/upload">Get Started</Link>
+                    <Link to="/tutorial">Get Started</Link>
                 </button>
                 <p> swag </p>
 
