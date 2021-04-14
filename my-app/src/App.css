@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  background-color: #e5e5e5;
 }
 
 .App-logo {
@@ -34,4 +34,48 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#sections {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.section {
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 2px;
+  font-size: 14pt;
+  /*font-family; ------- font family for three buttons on home screen*/
+}
+
+button {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 14pt;
+  background-color: #FAA916;
+  border-radius: 5px;
+  border: none;
+  color: white; /* color of font inside orange buttons?  */
+} /*add this style to button in input too*/
+
+#general-section {
+  background-color: #3BEAD1;
+  text-align: center;
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+
+a, a:hover, a:visited, a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  font-size: 24pt;
 }
