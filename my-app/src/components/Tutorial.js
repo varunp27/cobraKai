@@ -16,17 +16,17 @@ export default class Tutorial extends React.Component {
                     <h1>We take it seriously.</h1>
                     <p>We value privacy, so we will not store any of the data you upload.Once you finish reviewing our insights and finish your session, your data will be permanently deleted from our systems. Our intention behind creating this app is solely to educate Facebook users about what data is stored on them and how it is used.</p>
                 </div> 
-                <main className="tutorial">
+                <body className="tutorial">
                     <h1>Download your data</h1>
                     <h3>Get Started</h3>
                     <ul>
                         <li>Go to <a href="https://www.facebook.com/help/212802592074644">this link</a> and download your data from Facebook following the instructions. This may take a while! Facebook will send you an email once it’s done compiling your data.</li>
                         <li>Once you get the file via email click it to download it to your computer.</li>
-                        <li>Upload the specified files using the upload button</li>
+                        <li>Upload the specified files using the upload button on the next page.</li>
                     </ul>
 
 
-                </main>
+                </body>
                 <div>
                     <button>
                         <Link to="/upload">Next</Link>

@@ -15,7 +15,7 @@ export default class GetStarted extends React.Component {
             <div>
                 <div id="general-section">
                     <p>Being aware about your online behavior <strong>starts here.</strong></p>
-                    <button>
+                    <button className="start-button">
                         <Link to="/Tutorial">Get Started</Link>
                     </button>
                 </div>
