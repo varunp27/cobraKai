@@ -3,14 +3,26 @@
   background-color: 	#F5F5F5;
 }
 
-main {
-  height: 100%;
-}
 
 .App-header a:link {
     text-decoration: none;
   
 }
+
+.tutorial-body {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 95px;
+}
+
+.upload-body {
+  padding-top: 95px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 20px;
+}
+
 
 /*a { text-decoration: none; color:black; }
 a:visited { text-decoration: none; }
@@ -28,16 +40,16 @@ button a, button a:hover, button a:visited, button a:active {
   text-decoration: none;
 }
 
-.page-head {
+/*.page-head {
   margin-top: 15px;
   padding-top: 20px;
   padding-left: 20px;
-}
+  padding-bottom: 25px;
+}*/
 
 .App-header {
   background-color: #3BEAD1;
   color: black;
-  margin: 0;
 }
 
 h1 {
@@ -45,22 +57,29 @@ h1 {
 }
 
 nav{
-	position: fixed;
-	width: 100%;
+  display: flex;
+  position: fixed;
+  top:0;
+  width: 100%;
   background-color: #3BEAD1;
   color: black;
-	left: 0;
-	top: 0;
 	margin: 0px;
-  
+  overflow: auto;
+  height: auto;
+  padding-bottom: 25px;
+}
 
+.left-links {
+  flex:1 1 200px;
+  padding-left: 20px;
 }
 
 .navLink {
   padding-right: 30px;
   padding-top: 25px;
-  float: right;
   margin: 0px;
+  display: inline-block;
+  text-align: center;
 }
 
 .App-logo {
@@ -101,7 +120,7 @@ nav{
   /*font-family; ------- font family for three buttons on home screen*/
 }
 
-button {
+button, .custom-file-upload {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 5px;

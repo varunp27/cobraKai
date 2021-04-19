@@ -12,12 +12,13 @@ export default function Upload({ children }) {
     };
   };
   return (
-    <>
-      <h1>Upload Json file - Example</h1>
-
-      <input type="file" onChange={handleChange} />
-      <br />
+    <body className="upload-body">
+      <h2>Upload Files</h2>
+      
+      <input id="file-upload" type="file" onChange={handleChange} />
+      
+      
       {"uploaded file content -- " + files}
-    </>
+    </body>
   );
 }

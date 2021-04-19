@@ -9,10 +9,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="page-head"> <a href="/">Aware</a></h1>
         <nav className="navigation">
+          <div className="left-links">
+            <h1 className="navLink"> <a href="/">Aware</a></h1>
+          </div>
+          <div className="right-links">
             <a className="navLink" href="/">About Us</a>
             <a className="navLink" href="/" >Get in Touch</a>
+          </div>
         </nav>
       </header>
       <main>
