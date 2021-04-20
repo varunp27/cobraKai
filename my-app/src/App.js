@@ -28,7 +28,7 @@ function App() {
           </Router>
        </main>
 
-      
+      <FooterPage />
 
     </div>
   );
