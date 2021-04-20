@@ -1,5 +1,10 @@
 
-.App {
+html, .App {
+  background-color: 	#F5F5F5;
+  height: 100%;
+}
+
+body, main {
   background-color: 	#F5F5F5;
 }
 
@@ -14,6 +19,7 @@
   margin-right: 20px;
   padding-bottom: 20px;
   padding-top: 95px;
+  background-color: 	#F5F5F5;
 }
 
 .upload-body {
@@ -21,6 +27,12 @@
   margin-left: 20px;
   margin-right: 20px;
   padding-bottom: 20px;
+}
+
+.getstarted-body {
+  padding-top:90px;
+  background-color: 	#F5F5F5;
+  
 }
 
 
@@ -66,12 +78,16 @@ nav{
 	margin: 0px;
   overflow: auto;
   height: auto;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 
 .left-links {
-  flex:1 1 200px;
+  float: left;
   padding-left: 20px;
+}
+
+.right-links {
+  float: right;
 }
 
 .navLink {
@@ -120,7 +136,7 @@ nav{
   /*font-family; ------- font family for three buttons on home screen*/
 }
 
-button, .custom-file-upload {
+/*button, .custom-file-upload {
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 5px;
@@ -128,19 +144,44 @@ button, .custom-file-upload {
   font-size: 14pt;
   background-color: #FAA916;
   border-radius: 5px;
+  perspective: 1px;
   border: none;
   color: white; /* color of font inside orange buttons?  */
-} /*add this style to button in input too*/
+/*} /*add this style to button in input too*/
 
 #general-section {
   background-color: #3BEAD1;
   text-align: center;
   padding-bottom: 100px;
+  padding-top: 150px;
+}
+
+.privacy {
+  padding-top: 30px;
+}
+
+.next-btn {
   padding-top: 50px;
 }
 
+.upload {
+  padding-top: 30px;
+}
 
 
-p {
+#general-section p {
   font-size: 24pt;
+}
+
+#bootstrap-overrides button { /* 100+1=101 priority score, yay! */
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 14pt;
+  background-color: #FAA916;
+  border-radius: 5px;
+  perspective: 1px;
+  border: none;
+  color: white;
 }

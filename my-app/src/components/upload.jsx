@@ -12,13 +12,12 @@ export default function Upload({ children }) {
     };
   };
   return (
-    <body className="upload-body">
-      <h2>Upload Files</h2>
-      
-      <input id="file-upload" type="file" onChange={handleChange} />
-      
-      
-      {"uploaded file content -- " + files}
+    <body id="bootstrap-overrides" className="upload-body">
+      <div className="upload">
+        <h2>Upload Files</h2>
+        <input id="file-upload" type="file" onChange={handleChange} />
+        {"uploaded file content -- " + files}
+      </div>
     </body>
   );
 }

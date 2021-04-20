@@ -12,7 +12,7 @@ export default class GetStarted extends React.Component {
     
     render() {
         return (
-            <body className="getstarted-body">
+            <body id="bootstrap-overrides" className="getstarted-body">
                 <div id="general-section">
                     <p>Being aware about your online behavior <strong>starts here.</strong></p>
                     <button className="start-button">

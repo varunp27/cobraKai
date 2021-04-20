@@ -11,12 +11,12 @@ import {
 export default class Tutorial extends React.Component {
     render() {
         return (
-            <body className="tutorial-body">
+            <body id="bootstrap-overrides" className="tutorial-body">
                 <div className="privacy">
                     <h1>We take it seriously.</h1>
-                    <p>We value privacy, so we will not store any of the data you upload.Once you finish reviewing our insights and finish your session, your data will be permanently deleted from our systems. Our intention behind creating this app is solely to educate Facebook users about what data is stored on them and how it is used.</p>
+                    <p>We value privacy, so we will not store any of the data you upload. Once you finish reviewing our insights and finish your session, your data will be permanently deleted from our systems. Our intention behind creating this app is solely to educate Facebook users about what data is stored on them and how it is used.</p>
                 </div> 
-                <body className="tutorial">
+                <div className="tutorial">
                     <h1>Download your data</h1>
                     <h3>Get Started</h3>
                     <ul>
@@ -26,8 +26,8 @@ export default class Tutorial extends React.Component {
                     </ul>
 
 
-                </body>
-                <div>
+                </div>
+                <div className="next-btn">
                     <button>
                         <Link to="/upload">Next</Link>
                     </button>

@@ -4,6 +4,7 @@ import Upload from './components/upload';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import GetStarted from './components/GetStarted';
 import Tutorial from './components/Tutorial';
+import FooterPage from './components/Footer';
 
 function App() {
   return (
@@ -25,7 +26,10 @@ function App() {
             <Route path = '/upload' component = {Upload}/>
             <Route path = '/tutorial' component = {Tutorial}/>
           </Router>
-        </main>
+       </main>
+
+      
+
     </div>
   );
 }
