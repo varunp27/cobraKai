@@ -29,15 +29,23 @@ body, main {
   margin-right: 20px;
   padding-bottom: 20px;
   height: 100vh;
+  background-color: 	#F5F5F5;
 }
 
 .getstarted-body {
   padding-top:90px;
   background-color: 	#F5F5F5;
-  height: 100vh;
+  height: 100%;
   
 }
 
+.results1-body {
+  padding-top: 95px;
+  background-color: 	#F5F5F5;
+  height: 75%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
 
 /*a { text-decoration: none; color:black; }
 a:visited { text-decoration: none; }
@@ -124,9 +132,12 @@ nav{
 }
 
 #sections {
+  /*display: flex;*/
   display: flex;
   justify-content: space-around;
   padding: 50px;
+  height: 75%;
+
 }
 
 .section {
@@ -136,6 +147,9 @@ nav{
   background-color: white;
   box-shadow: 0px 2px;
   font-size: 14pt;
+  width: 25%;
+  height: fit-content;
+  overflow: scroll;
   /*font-family; ------- font family for three buttons on home screen*/
 }
 
@@ -163,6 +177,10 @@ nav{
   padding-top: 30px;
 }
 
+.insights {
+  padding-top: 30px;
+}
+
 .next-btn {
   padding-top: 70px;
 }
@@ -187,4 +205,11 @@ nav{
   perspective: 1px;
   border: none;
   color: white;
+}
+
+.footer {
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+             /* Footer height */
 }

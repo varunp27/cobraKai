@@ -20,21 +20,24 @@ export default class GetStarted extends React.Component {
                     </button>
                 </div>
                 <div id="sections">
-                    <div id="upload" class="section">
+                    <div id="upload" className="section">
                         <h3>Upload</h3>
-                        <button class="section-buttons">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus ultricies tristique nulla aliquet enim tortor at auctor urna. </p>
+                        <button className="section-buttons">
                             <Link to="/upload">Upload</Link>
                         </button>
                     </div>
-                    <div id="understand" class="section">
+                    <div id="understand" className="section">
                         <h3>Understand</h3>
-                        <button class="section-buttons">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus ultricies tristique nulla aliquet enim tortor at auctor urna.</p>
+                        <button className="section-buttons">
                             <Link to="/">Understand</Link>
                         </button>
                     </div>
-                    <div id="evaluate" class="section">
+                    <div id="evaluate" className="section">
                         <h3>Evaluate</h3>
-                        <button class="section-buttons">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus ultricies tristique nulla aliquet enim tortor at auctor urna.</p>
+                        <button className="section-buttons">
                             <Link to="/">Evaluate</Link>
                         </button>
                     </div>
