@@ -25,7 +25,7 @@ export default class Parent extends React.Component {
         return(
             <Router>
             <Route exact path = '/' component={GetStarted}/>
-            <Route path = '/upload' component = {Upload} />
+            <Route path = '/upload' component = {UploadFile} />
             <Route path = '/tutorial' component = {Tutorial}/>
             <Route path = '/results1' component = {Results1}/>
           </Router>
