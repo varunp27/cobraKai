@@ -20,7 +20,7 @@ export default class Tutorial extends React.Component {
                     <h1>Download your data</h1>
                     <h3>Get Started</h3>
                     <ul>
-                        <li>Go to <a href="https://www.facebook.com/help/212802592074644">this link</a> and download your data from Facebook following the instructions. This may take a while! Facebook will send you an email once it’s done compiling your data.</li>
+                        <li>Go to <a href="https://www.facebook.com/help/212802592074644" target="_blank" rel="noopener noreferrer">this link</a> and download your data from Facebook following the instructions. This may take a while! Facebook will send you an email once it’s done compiling your data.</li>
                         <li>Once you get the file via email click it to download it to your computer.</li>
                         <li>Upload the specified files using the upload button on the next page.</li>
                     </ul>
