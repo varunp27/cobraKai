@@ -39,9 +39,8 @@ export default class UploadFile extends React.Component {
                 <h2>Upload Files</h2>
             </div>
             <div>
-                <h4>interactions > groups.json</h4>
+                <h5>facebook-[your-username] > interactions > groups.json</h5>
                 <input className="file-upload" id="group" type="file" onChange={this.handleChangeGroupData} />
-                    {"uploaded file content -- " + this.state.groupData}
             </div>
             <div className="next-btn">
                 <button>

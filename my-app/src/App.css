@@ -177,12 +177,17 @@ nav{
   padding-top: 30px;
 }
 
+#treemap {
+  width: 900px;
+}
+
 .insights {
   padding-top: 30px;
 }
 
 .next-btn {
   padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .upload {

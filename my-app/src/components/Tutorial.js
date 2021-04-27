@@ -18,13 +18,33 @@ export default class Tutorial extends React.Component {
                 </div> 
                 <div className="tutorial">
                     <h1>Download your data</h1>
-                    <h3>Get Started</h3>
-                    <ul>
-                        <li>Go to <a href="https://www.facebook.com/help/212802592074644" target="_blank" rel="noopener noreferrer">this link</a> and download your data from Facebook following the instructions. This may take a while! Facebook will send you an email once it’s done compiling your data.</li>
-                        <li>Select to download your data in JSON format.</li>
-                        <li>Once you get the file via email click it to download it to your computer.</li>
-                        <li>Upload the specified files using the upload button on the next page.</li>
-                    </ul>
+                    <h3>To request a download of your data:</h3>
+                    <ol>
+                        <li>Login to your Facebook account from your browser.</li>
+                        <li>
+                            <div>
+                                 Click 
+                                <img class="_254 img" src="https://static.xx.fbcdn.net/assets/?revision=3913006052065405&amp;name=Comet-FB-Arrow&amp;density=1" alt=""></img>
+                                 in the top right of Facebook.
+                            </div>
+                        </li>
+                        <li>Select <strong>Settings & Privacy</strong>, then click <strong>Settings</strong>.</li>
+                        <li>In the left column, click <strong>Your Facebook Information</strong>.</li>
+                        <li>Next to <strong>Download Your Information</strong>, click <strong>View</strong>.</li>
+                        <li>To add or remove categories of data from your request, click the boxes on the right side of Facebook. Be sure to that the following specified categories are selected [categories].</li>
+                        <li>Select <strong>JSON</strong>, not HTML, as the format for your download request.</li>
+                        <li>Click <strong>Create File</strong> to confirm the download request.</li>
+                    </ol>
+
+                    <p>After you've made a download request, it will appear as <strong>Pending</strong> in the <strong>Available Copies</strong> section of the <strong>Download Your Information</strong> tool. <strong>It may take a while</strong> for Facebook to finish preparing your download request.</p>
+                    <p>Once Facebook finishes preparing your download request, they'll send a notification letting you know it's ready.</p>
+
+                    <h3>To download a copy of data you requested:</h3>
+
+                    <ol>
+                        <li>Go to the <strong>Available Copies</strong> section of the <strong>Download Your Information</strong> tool.</li>
+                        <li>Click <strong>Download</strong> and enter your password.</li>
+                    </ol>
 
 
                 </div>
