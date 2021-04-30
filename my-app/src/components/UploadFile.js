@@ -17,7 +17,7 @@ export default class UploadFile extends React.Component {
             setFiles: ""
 
         }
-       // this.handleChange = this.handleChange.bind(this);
+        this.handleChangeGroupData = this.handleChangeGroupData.bind(this);
     }
 
     handleChangeGroupData = e => {

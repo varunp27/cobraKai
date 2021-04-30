@@ -7,6 +7,7 @@ export default class GroupTreemap extends React.Component {
         this.state = {
             data: this.props.groupData
         }
+        this.drawChart = this.drawChart.bind(this)
     }
 
     componentDidMount() {
@@ -46,7 +47,8 @@ export default class GroupTreemap extends React.Component {
         let width = 1500;
         let height = 800;
         let format = d3.format(",d")
-        let color = d3.scaleOrdinal(d3.schemeCategory10)
+        let color = d3.scaleOrdinal()
+            .range(["#FFE5B4", "#aaf0d1", "#dcd0ff", "#add8e6"])
 
         console.log(group_counts)
 
