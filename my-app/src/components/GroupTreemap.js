@@ -16,7 +16,7 @@ export default class GroupTreemap extends React.Component {
         // }
          this.drawChart();
         
-        console.log(this.state.data)
+        //console.log(this.state.data)
 
     }
 
@@ -29,9 +29,6 @@ export default class GroupTreemap extends React.Component {
 
     drawChart() {
         console.log(this.state.data)
-        this.state = {
-            data: this.props.groupData
-        }
 
         let group_data = this.state.data.group_interactions[0].entries
         let group_counts = { children: [] };

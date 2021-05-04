@@ -47,6 +47,17 @@ body, main {
   margin-right: 20px;
 }
 
+.tabs-body {
+  z-index: 1000;
+  background-color: 	#F5F5F5;
+  height: 75%;
+}
+
+Tabs {
+  background-color: 	#F5F5F5;
+  height: 75%;
+}
+
 /*a { text-decoration: none; color:black; }
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
@@ -73,6 +84,7 @@ button a, button a:hover, button a:visited, button a:active {
 .App-header {
   background-color: #3BEAD1;
   color: black;
+  z-index: 1;
 }
 
 h1 {
