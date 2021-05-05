@@ -25,11 +25,11 @@ export default class Parent extends React.Component {
         const {data} = this.state;
         return(
             <Router>
-            <Route exact path = '/' component={GetStarted}/>
-            <Route path = '/upload' component = {UploadFile} />
-            <Route path = '/tutorial' component = {Tutorial}/>
-            <Route path = '/results1' component = {Results1}/>
-            <Route path = '/aboutus' component = {AboutUs}/>
+            <Route exact path = '/cobraKai' component={GetStarted}/>
+            <Route path = '/cobraKai/upload' component = {UploadFile} />
+            <Route path = '/cobraKai/tutorial' component = {Tutorial}/>
+            <Route path = '/cobraKai/results1' component = {Results1}/>
+            <Route path = '/cobraKai/aboutus' component = {AboutUs}/>
           </Router>
         )
     }
