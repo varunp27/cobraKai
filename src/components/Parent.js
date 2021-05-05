@@ -24,7 +24,7 @@ export default class Parent extends React.Component {
     render(){
         const {data} = this.state;
         return(
-            <Router>
+            <Router basename ={process.env.PUBLIC_URL}>
             <Route exact path = '/cobraKai' component={GetStarted}/>
             <Route path = '/cobraKai/upload' component = {UploadFile} />
             <Route path = '/cobraKai/tutorial' component = {Tutorial}/>
