@@ -20,7 +20,7 @@ function App() {
               <h1 className="navLink"> <a href="/cobraKai">Aware</a></h1>
             </div>
             <div className="right-links">
-              <a className="navLink" href="/cobraKai/aboutus">About Us</a>
+              <a className="navLink" href="/cobraKai/aboutus"><Link to="/aboutus">About Us</Link></a>
               <a className="navLink" href="/" >Get in Touch</a>
             </div>
           </nav>
