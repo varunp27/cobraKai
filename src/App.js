@@ -17,10 +17,10 @@ function App() {
         <header className="App-header">
           <nav className="navigation">
             <div className="left-links">
-              <h1 className="navLink"> <a href="/">Aware</a></h1>
+              <h1 className="navLink"> <a href="/cobraKai">Aware</a></h1>
             </div>
             <div className="right-links">
-              <a className="navLink" href="/aboutus">About Us</a>
+              <a className="navLink" href="/cobraKai/aboutus">About Us</a>
               <a className="navLink" href="/" >Get in Touch</a>
             </div>
           </nav>
