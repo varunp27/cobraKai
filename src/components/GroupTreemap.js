@@ -52,7 +52,7 @@ export default class GroupTreemap extends React.Component {
         console.log(group_counts)
 
 
-
+/*hover code
         //hover code
 
         var tooltip = d3.select("#area")
@@ -87,7 +87,7 @@ export default class GroupTreemap extends React.Component {
       .transition()
       .duration(200)
       .style("opacity", 0)
-  }
+  }*/
 
         let treemap = data =>
         d3
@@ -122,9 +122,19 @@ export default class GroupTreemap extends React.Component {
           })
           .attr("width", d => d.x1 - d.x0)
           .attr("height", d => d.y1 - d.y0)
-          .on("mouseover", mouseover )
+          .on('mouseover', function (d, i) {
+              d3.select(this).transition()
+                  .duration('50')
+                  .attr('opacity', '1');
+              })
+          .on('mouseout', function (d, i) {
+              d3.select(this).transition()
+                  .duration('50')
+                  .attr('opacity', '0.5');
+                });
+          /*.on("mouseover", mouseover )
           .on("mousemove", mousemove )
-          .on("mouseleave", mouseleave )
+          .on("mouseleave", mouseleave )*/
       
         leaf
           .append("text")

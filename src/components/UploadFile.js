@@ -58,29 +58,30 @@ export default class UploadFile extends React.Component {
     render() {
         return (
             <div id="bootstrap-overrides" className="upload-body">
-            <div className="upload">
+              <div className="upload">
                 <h2>Upload Files</h2>
-            </div>
-            <div>
-                <h5>facebook-[your-username] > interactions > groups.json</h5>
-                <input className="file-upload" id="group" type="file" onChange={this.handleChangeGroupData} />
-            </div>
+              </div>
+              
+              <div className="upload-sections">
+                <div>
+                    <h5>facebook-[your-username] > interactions > groups.json</h5>
+                    <input className="file-upload" id="group" type="file" onChange={this.handleChangeGroupData} />
+                </div>
 
-            <div>
-                <h5>facebook-[your-username] > ads_and_businesses > ads_interest.json</h5>
-                <input className="file-upload" id="group" type="file" onChange={this.handleChangeAdsData} />
-            </div>
+                <div>
+                    <h5>facebook-[your-username] > ads_and_businesses > ads_interest.json</h5>
+                    <input className="file-upload" id="group" type="file" onChange={this.handleChangeAdsData} />
+                </div>
 
-            <div>
-                <h5>facebook-[your-username] > likes_and_reactions > pages.json</h5>
-                <input className="file-upload" id="group" type="file" onChange={this.handleChangePagesData} />
-            </div>
+                <div>
+                    <h5>facebook-[your-username] > likes_and_reactions > pages.json</h5>
+                    <input className="file-upload" id="group" type="file" onChange={this.handleChangePagesData} />
+                </div>
 
-            <div className="next-btn">
-                <button>
-                <Link to={{ pathname: '/results1' }}>Next</Link>
+                <button className="nxt-btn">
+                  <Link to={{ pathname: '/results1' }}>Next</Link>
                 </button>
-            </div>
+              </div>
             </div>
         );
     }
