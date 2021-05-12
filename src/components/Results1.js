@@ -15,12 +15,19 @@ export default class Results1 extends React.Component {
 
     constructor(props) {
         super(props);
+
+        // let groupState =  JSON.stringify(this.props.location.groupData)
+        // let adsState =  JSON.stringify(this.props.location.adsData)
+        // let pagesState =  JSON.stringify(this.props.location.pagesData)
+        // localStorage.setItem('groupState', groupState);
+        // localStorage.setItem('adsState', adsState);
+        // localStorage.setItem('adsState', pagesState);
         
-        this.state = {
-            groupData : JSON.parse(this.props.location.groupData),
-            adsData : JSON.parse(this.props.location.adsData),
-            pagesData: JSON.parse(this.props.location.pagesData)
-        }
+        // this.state = {
+        //     groupData : JSON.parse(this.props.location.groupData),
+        //     adsData : JSON.parse(this.props.location.adsData),
+        //     pagesData: JSON.parse(this.props.location.pagesData)
+        // }
         
     }
 
@@ -50,23 +57,23 @@ export default class Results1 extends React.Component {
     
 
     render() {
-        let groups;
-        if (typeof this.props.location.groupData !== 'undefined') {
-            groups = JSON.parse(this.props.location.groupData)
-        }
+        // let groups;
+        // if (typeof this.props.location.groupData !== 'undefined') {
+        //     groups = JSON.parse(this.props.location.groupData)
+        // }
         
-        console.log(this.state.groupData)
-        console.log(this.state.adsData)
+        // console.log(this.state.groupData)
+        // console.log(this.state.adsData)
 
-        let group_data = groups.group_interactions[0].entries
+        // let group_data = groups.group_interactions[0].entries
 
-        console.log(group_data)
+        // console.log(group_data)
         return (
             <div className="results1-body">
                 <div className="insights">
                     <h2>Here are our insights</h2>
 
-                    <TabContainer groupData = {this.state.groupData} adsData = {this.state.adsData} pagesData = {this.state.pagesData}/>
+                    <TabContainer />
                     
                 </div>
             </div>

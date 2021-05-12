@@ -9,8 +9,12 @@ import Interactions from "./Interactions"
 export default class TabContainer extends React.Component {
 
     render() {
-      console.log(this.props.adsData)
-      console.log(this.props.pagesData)
+
+
+
+      let groupState = JSON.parse(localStorage.getItem('groupState'));
+      let adsState = JSON.parse(localStorage.getItem('adsState'));
+      let pagesState = JSON.parse(localStorage.getItem('pagesState'));
         return (
           <div className="tabs-body">
           <Tabs>
@@ -23,7 +27,7 @@ export default class TabContainer extends React.Component {
           <TabPanel>
             <h2>Your Interactions</h2>
 
-             <Interactions groupData = {this.props.groupData} />
+             <Interactions  />
           
         
           </TabPanel>
@@ -32,7 +36,7 @@ export default class TabContainer extends React.Component {
           </TabPanel>
           <TabPanel>
             <h2>Compare Frequent Words in your Ads and Page Likes</h2>
-            <AdsWordCloud adsData = {this.props.adsData} pagesData = {this.props.pagesData} />
+            <AdsWordCloud/>
           </TabPanel>
         </Tabs>
         </div>

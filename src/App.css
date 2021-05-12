@@ -250,3 +250,11 @@ nav{
   height: 800px;
   width: 1500px;
 }
+
+#area {
+  width: 700px;
+}
+
+.exportDesc {
+  padding-top: 20px;
+}

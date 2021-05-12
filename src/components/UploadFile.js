@@ -27,7 +27,8 @@ export default class UploadFile extends React.Component {
         fileReader.readAsText(e.target.files[0], "UTF-8");
         fileReader.onload = e => {
           console.log("e.target.result", e.target.result);
-          this.setState({groupData: e.target.result})
+          this.setState({groupData: e.target.result});
+          localStorage.setItem('groupState', e.target.result);
         };
       };
 
@@ -36,7 +37,8 @@ export default class UploadFile extends React.Component {
         fileReader.readAsText(e.target.files[0], "UTF-8");
         fileReader.onload = e => {
           console.log("e.target.result", e.target.result);
-          this.setState({adsData: e.target.result})
+          this.setState({adsData: e.target.result});
+          localStorage.setItem('adsState', e.target.result);
         };
       };
 
@@ -45,7 +47,8 @@ export default class UploadFile extends React.Component {
         fileReader.readAsText(e.target.files[0], "UTF-8");
         fileReader.onload = e => {
           console.log("e.target.result", e.target.result);
-          this.setState({pagesData: e.target.result})
+          this.setState({pagesData: e.target.result});
+          localStorage.setItem('pagesState', e.target.result);
         };
       };
     
@@ -75,7 +78,7 @@ export default class UploadFile extends React.Component {
 
             <div className="next-btn">
                 <button>
-                <Link to={{ pathname: '/results1', groupData: this.state.groupData, adsData: this.state.adsData, pagesData: this.state.pagesData }}>Next</Link>
+                <Link to={{ pathname: '/results1' }}>Next</Link>
                 </button>
             </div>
             </div>

@@ -6,23 +6,23 @@ import * as d4 from "d3-cloud"
 export default class AdsWordCloud extends React.Component {
     constructor(props){
         super(props);
-        this.state = {
-            adsData: this.props.adsData,
-            pagesData: this.props.pagesData
-        }
+        // this.state = {
+        //     adsData: this.props.adsData,
+        //     pagesData: this.props.pagesData
+        // }
         this.drawChart = this.drawChart.bind(this)
     
     }
 
 
     componentDidMount() {
-        console.log(this.state.adsData)
+        // console.log(this.state.adsData)
         this.drawChart()
     }
 
     drawChart() {
-        console.log(this.state.adsData)
-        console.log(this.state.pagesData)
+        // console.log(this.state.adsData)
+        // console.log(this.state.pagesData)
 
         // let ads_interests_string = this.state.adsData.topics.join(" ")
         // let page_arr = [];
@@ -138,10 +138,10 @@ export default class AdsWordCloud extends React.Component {
 
     render() {
 
-        let ads_interests_string = this.state.adsData.topics.join(" ")
+        let ads_interests_string = JSON.parse(localStorage.getItem('adsState')).topics.join(" ")
         let page_arr = [];
-        for (let i = 0; i < this.state.pagesData.page_likes.length; i++) {
-            page_arr.push(this.state.pagesData.page_likes[i].name)
+        for (let i = 0; i < JSON.parse(localStorage.getItem('pagesState')).page_likes.length; i++) {
+            page_arr.push(JSON.parse(localStorage.getItem('pagesState')).page_likes[i].name)
         }
         let pages_string = page_arr.join(" ");
         
