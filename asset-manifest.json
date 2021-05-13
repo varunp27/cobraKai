@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cobraKai/static/css/main.b1f5ce75.chunk.css",
+    "main.css": "/cobraKai/static/css/main.3af4269c.chunk.css",
     "main.js": "/cobraKai/static/js/main.8a91c9d6.chunk.js",
     "main.js.map": "/cobraKai/static/js/main.8a91c9d6.chunk.js.map",
     "runtime-main.js": "/cobraKai/static/js/runtime-main.6cce34eb.js",
@@ -12,7 +12,7 @@
     "static/js/3.0fe1e073.chunk.js.map": "/cobraKai/static/js/3.0fe1e073.chunk.js.map",
     "index.html": "/cobraKai/index.html",
     "static/css/2.3dedbf56.chunk.css.map": "/cobraKai/static/css/2.3dedbf56.chunk.css.map",
-    "static/css/main.b1f5ce75.chunk.css.map": "/cobraKai/static/css/main.b1f5ce75.chunk.css.map",
+    "static/css/main.3af4269c.chunk.css.map": "/cobraKai/static/css/main.3af4269c.chunk.css.map",
     "static/js/2.43b9d6ec.chunk.js.LICENSE.txt": "/cobraKai/static/js/2.43b9d6ec.chunk.js.LICENSE.txt",
     "static/media/mdb.css": "/cobraKai/static/media/arrow_right.0897f985.svg",
     "static/media/all.min.css": "/cobraKai/static/media/fa-solid-900.efbd5d20.eot",
@@ -22,7 +22,7 @@
     "static/js/runtime-main.6cce34eb.js",
     "static/css/2.3dedbf56.chunk.css",
     "static/js/2.43b9d6ec.chunk.js",
-    "static/css/main.b1f5ce75.chunk.css",
+    "static/css/main.3af4269c.chunk.css",
     "static/js/main.8a91c9d6.chunk.js"
   ]
 }
