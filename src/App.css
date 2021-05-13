@@ -298,9 +298,15 @@ div.tooltip {
 }
 
 #explanation {
-  margin: 20pt;
+  margin-top: 30pt;
+  margin-left: 30pt;
   padding-bottom: 20pt;
 }
+
+#explanation p {
+  font-size: 20pt;
+}
+
 .exportDesc {
   padding-top: 20px;
 }

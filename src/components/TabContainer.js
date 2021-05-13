@@ -37,7 +37,13 @@ export default class TabContainer extends React.Component {
           <TabPanel>
             <h2>Compare Frequent Words in your Ads and Page Likes</h2>
             <AdsWordCloud/>
-            <div id="explanation"><h3>What does this mean?</h3><p>swag</p></div>
+            <div id="explanation">
+              <p>
+                The visualizations above use data from your ads interests file, and your liked pages file. 
+                Your ads interests file contains a list of topics that Facebook has associated your profile with,
+                and the liked pages file stores all the Facebook pages you have liked. Hover over words to see if there are
+                matches in the other file!
+              </p></div>
           </TabPanel>
         </Tabs>
         </div>
