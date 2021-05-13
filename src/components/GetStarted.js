@@ -22,21 +22,21 @@ export default class GetStarted extends React.Component {
                 <div id="sections">
                     <div id="upload" className="section">
                         <h3>Upload</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus ultricies tristique nulla aliquet enim tortor at auctor urna. </p>
+                        <p>Use our Upload feature to upload your raw Facebook data. The data you upload will be stored in a local session and will be permanantly deleted when you close our app.</p>
                         <button className="section-buttons">
                             <Link to="/upload">Upload</Link>
                         </button>
                     </div>
                     <div id="understand" className="section">
                         <h3>Understand</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus ultricies tristique nulla aliquet enim tortor at auctor urna.</p>
+                        <p>Your raw data will be made into multiple data visualization dashboards. Understand how you use Facebook and what Facebook learns about you.</p>
                         <button className="section-buttons">
-                            <Link to="/">Understand</Link>
+                            <Link to="/upload">Understand</Link>
                         </button>
                     </div>
                     <div id="evaluate" className="section">
                         <h3>Evaluate</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus ultricies tristique nulla aliquet enim tortor at auctor urna.</p>
+                        <p>Evaluate your insights and your behavior using Facebook. Follow our <strong>Secure Secrets</strong> guide to learn how you can be more secure about the data Facebook collects.</p>
                         <button className="section-buttons">
                             <Link to="/">Evaluate</Link>
                         </button>
