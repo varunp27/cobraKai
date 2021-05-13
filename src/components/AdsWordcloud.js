@@ -161,7 +161,7 @@ export default class AdsWordCloud extends React.Component {
         .map(w => w.replace(/['’]s$/g, ""))
         .map(w => w.substring(0, 30))
         .map(w => w.toLowerCase())
-        .filter(w => w && !stopwords.has(w))
+        .filter(w => w && !stopwords.has(w) && w.length > 1)
 
         let words2 = pages_string.split(/[\s.]+/g)
         .map(w => w.replace(/^[“‘"\-—()\[\]{}]+/g, ""))
@@ -169,7 +169,7 @@ export default class AdsWordCloud extends React.Component {
         .map(w => w.replace(/['’]s$/g, ""))
         .map(w => w.substring(0, 30))
         .map(w => w.toLowerCase())
-        .filter(w => w && !stopwords.has(w))
+        .filter(w => w && !stopwords.has(w) && w.length > 1)
 
         let matches = [];
         words.sort();
@@ -192,12 +192,12 @@ export default class AdsWordCloud extends React.Component {
 
          let data = d3.rollups(words, group => group.length, w => w)
          .sort(([, a], [, b]) => d3.descending(a, b))
-         .slice(0, 250)
+         .slice(0, words.length)
          .map(([text, value]) => ({text, value}))
 
          let data2 = d3.rollups(words2, group => group.length, w => w)
          .sort(([, a], [, b]) => d3.descending(a, b))
-         .slice(0, 250)
+         .slice(0, words2.length)
          .map(([text, value]) => ({text, value}))
 
          const fontSizeMapper = word => Math.log2(word.value) * 17;
