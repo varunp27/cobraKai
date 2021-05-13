@@ -76,6 +76,13 @@ export default class Results1 extends React.Component {
                     <TabContainer />
                     
                 </div>
+                
+
+                <div id="bootstrap-overrides" className="next-steps-next-btn">
+                    <button className="section-buttons">
+                                <Link to="/next-steps">Next Steps</Link>
+                    </button>
+                </div>
             </div>
         )
     }

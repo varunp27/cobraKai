@@ -19,9 +19,9 @@ export default class TabContainer extends React.Component {
           <div className="tabs-body">
           <Tabs>
           <TabList>
-            <Tab>Interactions</Tab>
-            <Tab>Usage</Tab>
-            <Tab>Ads</Tab>
+            <Tab style= {{position: 'inherit'}}>Interactions</Tab>
+            <Tab style= {{position: 'inherit'}}>Usage</Tab>
+            <Tab style= {{position: 'inherit'}}>Ads</Tab>
           </TabList>
       
           <TabPanel>

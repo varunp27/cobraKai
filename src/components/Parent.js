@@ -7,6 +7,7 @@ import Results1 from './Results1';
 import GetStarted from './GetStarted';
 import UploadFile from './UploadFile';
 import AboutUs from "./AboutUs";
+import NextSteps from "./NextSteps"
 
 
 export default class Parent extends React.Component {
@@ -32,7 +33,7 @@ export default class Parent extends React.Component {
                             </div>
                             <div className="right-links">
                             <Link className="navLink" to ='/aboutus'>About Us </Link>
-                            <a className="navLink" href="/" >Get in Touch</a>
+                            <Link className="navLink" to="/next-steps" >Secure Secrets</Link>
                             </div>
                         </nav>
                 </header>
@@ -42,6 +43,7 @@ export default class Parent extends React.Component {
             <Route path = '/Tutorial' component = {Tutorial}/>
             <Route path = '/results1' component = {Results1}/>
             <Route path = '/aboutus' component = {AboutUs}/>
+            <Route path = '/next-steps' component = {NextSteps} />
           </HashRouter>
         )
     }

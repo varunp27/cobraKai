@@ -38,7 +38,7 @@ export default class GetStarted extends React.Component {
                         <h3>Evaluate</h3>
                         <p>Evaluate your insights and your behavior using Facebook. Follow our <strong>Secure Secrets</strong> guide to learn how you can be more secure about the data Facebook collects.</p>
                         <button className="section-buttons">
-                            <Link to="/">Evaluate</Link>
+                            <Link to="/next-steps">Evaluate</Link>
                         </button>
                     </div>
                 </div>
