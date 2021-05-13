@@ -251,9 +251,21 @@ nav{
              /* Footer height */
 }
 
-#wordcloud {
+#wordclouds {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.wordcloud {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border-radius: 15pt;
+  padding: 10pt;
+}
+
+.wordcloud h3 {
+  text-align: center;
+  font-size: 26pt;
+  font-weight: 500;
 }
 
 .groupTreemap {
@@ -261,10 +273,28 @@ nav{
   width: 1500px;
 }
 
-#area {
-  width: 700px;
+div.tooltip {	
+  position: absolute;			
+  text-align: center;			
+  width: 60px;					
+  height: 28px;					
+  padding: 2px;				
+  font: 12px sans-serif;		
+  background: black;	
+  border: 0px;		
+  border-radius: 8px;			
+  pointer-events: none;
 }
 
+#area {
+  width: 900px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#explanation {
+  margin: 20pt;
+  padding-bottom: 20pt;
+}
 .exportDesc {
   padding-top: 20px;
 }

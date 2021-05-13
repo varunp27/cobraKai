@@ -37,6 +37,7 @@ export default class TabContainer extends React.Component {
           <TabPanel>
             <h2>Compare Frequent Words in your Ads and Page Likes</h2>
             <AdsWordCloud/>
+            <div id="explanation"><h3>What does this mean?</h3><p>swag</p></div>
           </TabPanel>
         </Tabs>
         </div>

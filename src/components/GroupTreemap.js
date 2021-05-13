@@ -25,7 +25,6 @@ export default class GroupTreemap extends React.Component {
     componentWillUnmount() {
 
     }
-
     
 
     drawChart() {
@@ -51,44 +50,6 @@ export default class GroupTreemap extends React.Component {
 
         console.log(group_counts)
 
-
-/*hover code
-        //hover code
-
-        var tooltip = d3.select("#area")
-    .append("div")
-    .style("opacity", 0)
-    .attr("class", "tooltip")
-    .style("background-color", "white")
-    .style("border", "solid")
-    .style("border-width", "1px")
-    .style("border-radius", "5px")
-    .style("padding", "10px")
-
-
-
-  // A function that change this tooltip when the user hover a point.
-  // Its opacity is set to 1: we can now see it. Plus it set the text and position of tooltip depending on the datapoint (d)
-  var mouseover = function(d) {
-    tooltip
-      .style("opacity", 1)
-  }
-
-  var mousemove = function(d) {
-    tooltip
-      .html("The exact value of<br>the Ground Living area is: ")
-      .style("left", (d3.pointer(this)[0]+90) + "px") // It is important to put the +90: other wise the tooltip is exactly where the point is an it creates a weird effect
-      .style("top", (d3.pointer(this)[1]) + "px")
-  }
-
-  // A function that change this tooltip when the leaves a point: just need to set opacity to 0 again
-  var mouseleave = function(d) {
-    tooltip
-      .transition()
-      .duration(200)
-      .style("opacity", 0)
-  }*/
-
         let treemap = data =>
         d3
             .treemap()
@@ -113,42 +74,61 @@ export default class GroupTreemap extends React.Component {
           .data(root.leaves())
           .join("g")
           .attr("transform", d => `translate(${d.x0},${d.y0})`);
-      
+
+        // hover constant
+        const tip = svg
+          .append("g")
+          .style("pointer-events", "none")
+          .style("text-anchor", "middle");
+        
         leaf
           .append("rect")
           .attr("fill", d => {
             while (d.depth > 1) d = d.parent;
             return color(d.data.name);
           })
+          .attr("opacity", "0.7")
           .attr("width", d => d.x1 - d.x0)
           .attr("height", d => d.y1 - d.y0)
-          .on('mouseover', function (d, i) {
-              d3.select(this).transition()
-                  .duration('50')
-                  .attr('opacity', '1');
-              })
-          .on('mouseout', function (d, i) {
-              d3.select(this).transition()
-                  .duration('50')
-                  .attr('opacity', '0.5');
-                });
-          /*.on("mouseover", mouseover )
-          .on("mousemove", mousemove )
-          .on("mouseleave", mouseleave )*/
-      
-        leaf
-          .append("text")
-          .selectAll("tspan")
-          .data(d => d.data.name.split(/(?=[A-Z][a-z])|\s+/g).concat(format(d.value)))
-          .join("tspan")
-          .attr("x", 3)
-          .attr(
-            "y",
-            (d, i, nodes) => `${(i === nodes.length - 1) * 0.3 + 1.1 + i * 0.9}em`
-          )
-          .text(d => d);
-      
-        return svg.node();
+          .on("mouseover", function(d) {
+            d3.select(this)
+              .attr('opacity', '1')
+              .attr("stroke", "black")
+           const reg = d.target.__data__.key
+            tooltip
+              .style("visibility", "visible") // Make tooltip visible
+              // Add text
+              .html(` 
+                <div>Group: ${d.target.__data__.data.name}</div>
+                <div>${d.target.__data__.data.value} times</div>
+              `);
+           })
+           .on("mousemove", function(e) {
+            tooltip
+              .style("top", e.pageY - 10 + "px")
+              .style("left", e.pageX + 10 + "px");
+            })
+          .on("mouseout", function() {
+            d3.select(this)
+                .attr('opacity', '0.7')
+                .attr("stroke", 0);
+            tooltip.style("visibility", "hidden"); // Hide visibility
+          });
+        
+          const tooltip = d3
+          .select("body")
+          .append("div")
+          .style("position", "absolute")
+          .style("visibility", "hidden") // Default should be hidden until hovered over
+          .style("background", "white")
+          .style("border-radius", "5pt")
+          .style("color", "black")
+          .style("border", "1pt solid #3BEAD1")
+          .style("font-family", "sans-serif")
+          .style("font-size", "25px")
+          .style("line-height", "25px")
+          .style("padding", "10px 10px")
+          .style("visibility", "hidden");
     }
 
     render() {
