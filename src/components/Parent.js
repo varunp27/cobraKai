@@ -1,6 +1,6 @@
 import React from 'react';
 import Upload from './upload';
-import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, HashRouter} from 'react-router-dom';
 
 import Tutorial from './Tutorial';
 import Results1 from './Results1';
@@ -24,7 +24,7 @@ export default class Parent extends React.Component {
     render(){
         const {data} = this.state;
         return(
-            <Router basename ={process.env.PUBLIC_URL}>
+            <HashRouter basename ={process.env.PUBLIC_URL}>
                 <header className="App-header">
                         <nav className="navigation">
                             <div className="left-links">
@@ -42,7 +42,7 @@ export default class Parent extends React.Component {
             <Route path = '/Tutorial' component = {Tutorial}/>
             <Route path = '/results1' component = {Results1}/>
             <Route path = '/aboutus' component = {AboutUs}/>
-          </Router>
+          </HashRouter>
         )
     }
 }
