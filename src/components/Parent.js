@@ -24,7 +24,7 @@ export default class Parent extends React.Component {
     render(){
         const {data} = this.state;
         return(
-            <HashRouter basename ={process.env.PUBLIC_URL}>
+            <HashRouter >
                 <header className="App-header">
                         <nav className="navigation">
                             <div className="left-links">
