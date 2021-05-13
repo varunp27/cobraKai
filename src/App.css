@@ -307,8 +307,16 @@ div.tooltip {
   font-size: 20pt;
 }
 
+.export {
+  padding: 20px;
+}
+
 .exportDesc {
-  padding-top: 20px;
+  margin-top: 30px;
+}
+
+.exportDesc p {
+  font-size: 20pt;
 }
 
 .next-steps-next-btn {
