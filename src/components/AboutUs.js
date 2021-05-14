@@ -11,7 +11,7 @@ export default class AboutUs extends React.Component {
                 <h5><strong>Aware</strong> is a serverless website that allows users to upload their Facebook data, understand how Facebook is using their data, and how they are using Facebook. Aware was built using ReactJS and D3. Aware does not use, store, or share any data that users upload, as we do no maintain a database or server to do so.</h5>
 
                 <iframe width="900" height="506"
-                    src="https://www.youtube.com/embed/17jBk_iGfGQ">
+                    src="https://www.youtube.com/embed/xklzK51ZbK0">
                 </iframe>
 
                 <h3>Team Members</h3>
