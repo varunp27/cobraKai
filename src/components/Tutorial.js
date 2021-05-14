@@ -44,6 +44,7 @@ export default class Tutorial extends React.Component {
                     <ol>
                         <li>Go to the <strong>Available Copies</strong> section of the <strong>Download Your Information</strong> tool.</li>
                         <li>Click <strong>Download</strong> and enter your password.</li>
+                        <li>After downloading the file, double click on the zipped file to unzip it.</li>
                     </ol>
 
 

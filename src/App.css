@@ -62,12 +62,41 @@ body, main {
   height: 100vh;
 }
 
-.next-steps-body {
+#next-steps-body {
   padding-top: 105px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
   padding-bottom: 20px;
 }
+
+#next-steps-body::before {    
+  content: "";
+  background-image: url("img/lock.jpg");
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  top: 93px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
+}
+
+#next-steps-body h1 {
+  position: relative;
+  color: black;  
+  font-size: 24;
+  line-height: 0.9;
+  padding-top: 20px;
+}
+
+#next-steps-body p {
+  font-size: 16pt;
+  font-weight: 300;
+  position: relative;
+}
+
+
 
 .bottom-aboutus {
   padding-bottom: 50px;
@@ -257,9 +286,21 @@ nav{
              /* Footer height */
 }
 
-#wordcloud {
+#wordclouds {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+
+.wordcloud {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  border-radius: 15pt;
+  padding: 10pt;
+}
+
+.wordcloud h3 {
+  text-align: center;
+  font-size: 26pt;
+  font-weight: 500;
 }
 
 .groupTreemap {
@@ -267,12 +308,44 @@ nav{
   width: 1500px;
 }
 
+div.tooltip {	
+  position: absolute;			
+  text-align: center;			
+  width: 60px;					
+  height: 28px;					
+  padding: 2px;				
+  font: 12px sans-serif;		
+  background: black;	
+  border: 0px;		
+  border-radius: 8px;			
+  pointer-events: none;
+}
+
 #area {
-  width: 700px;
+  width: 900px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#explanation {
+  margin-top: 30pt;
+  margin-left: 30pt;
+  padding-bottom: 20pt;
+}
+
+#explanation p {
+  font-size: 20pt;
+}
+
+.export {
+  padding: 20px;
 }
 
 .exportDesc {
-  padding-top: 20px;
+  margin-top: 30px;
+}
+
+.exportDesc p {
+  font-size: 20pt;
 }
 
 .next-steps-next-btn {
