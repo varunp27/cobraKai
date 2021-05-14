@@ -47,6 +47,10 @@ export default class NextSteps extends React.Component {
                         what companies are tracking you through cookies across different sites
                     </li>
                     <li>
+                        <a href="https://duckduckgo.com/?va=b&t=hc">DuckDuckGo</a>: This tool is an internet search engine that
+                        allows users to search and browse privately without trackers.
+                    </li>
+                    <li>
                         <a href="https://justgetmydata.com/">JustGetMyData</a>: This tool links to 
                         where you can download your data files on different online platforms.
                     </li>
