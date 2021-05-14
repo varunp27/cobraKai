@@ -23,6 +23,7 @@ export default class AboutUs extends React.Component {
 
                 <h5>Here's a link to our github repo</h5>
                 <p className="bottom-aboutus"><a href='https://github.com/varunp27/cobraKai'>Aware Github Repo</a></p>
+                <p>With help from Yim Register, iPhD Student</p>
             </div>
         )
     }

@@ -192,12 +192,12 @@ export default class AdsWordCloud extends React.Component {
 
          let data = d3.rollups(words, group => group.length, w => w)
          .sort(([, a], [, b]) => d3.descending(a, b))
-         .slice(0, words.length)
+         .slice(2, 150)
          .map(([text, value]) => ({text, value}))
 
          let data2 = d3.rollups(words2, group => group.length, w => w)
          .sort(([, a], [, b]) => d3.descending(a, b))
-         .slice(0, words2.length)
+         .slice(2, 150)
          .map(([text, value]) => ({text, value}))
 
          const fontSizeMapper = word => Math.log2(word.value) * 17;

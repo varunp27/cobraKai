@@ -62,12 +62,41 @@ body, main {
   height: 100vh;
 }
 
-.next-steps-body {
+#next-steps-body {
   padding-top: 105px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
   padding-bottom: 20px;
 }
+
+#next-steps-body::before {    
+  content: "";
+  background-image: url("img/lock.jpg");
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  top: 93px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.2;
+}
+
+#next-steps-body h1 {
+  position: relative;
+  color: black;  
+  font-size: 24;
+  line-height: 0.9;
+  padding-top: 20px;
+}
+
+#next-steps-body p {
+  font-size: 16pt;
+  font-weight: 300;
+  position: relative;
+}
+
+
 
 .bottom-aboutus {
   padding-bottom: 50px;
