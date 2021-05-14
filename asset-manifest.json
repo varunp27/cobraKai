@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/cobraKai/static/css/main.8c17da93.chunk.css",
-    "main.js": "/cobraKai/static/js/main.08afca9b.chunk.js",
-    "main.js.map": "/cobraKai/static/js/main.08afca9b.chunk.js.map",
+    "main.js": "/cobraKai/static/js/main.d2e08b4c.chunk.js",
+    "main.js.map": "/cobraKai/static/js/main.d2e08b4c.chunk.js.map",
     "runtime-main.js": "/cobraKai/static/js/runtime-main.c3431447.js",
     "runtime-main.js.map": "/cobraKai/static/js/runtime-main.c3431447.js.map",
     "static/css/2.3dedbf56.chunk.css": "/cobraKai/static/css/2.3dedbf56.chunk.css",
@@ -24,6 +24,6 @@
     "static/css/2.3dedbf56.chunk.css",
     "static/js/2.dd33ccd9.chunk.js",
     "static/css/main.8c17da93.chunk.css",
-    "static/js/main.08afca9b.chunk.js"
+    "static/js/main.d2e08b4c.chunk.js"
   ]
 }
