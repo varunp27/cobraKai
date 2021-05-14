@@ -69,23 +69,10 @@ body, main {
   padding-bottom: 20px;
 }
 
-#next-steps-body::before {    
-  content: "";
-  background-image: url("img/lock.jpg");
-  background-size: cover;
-  height: 100%;
-  position: absolute;
-  top: 93px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.2;
-}
-
 #next-steps-body h1 {
-  position: relative;
   color: black;  
   font-size: 24;
+  font-weight: 400;
   line-height: 0.9;
   padding-top: 20px;
 }
