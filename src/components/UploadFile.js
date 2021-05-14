@@ -15,6 +15,7 @@ export default class UploadFile extends React.Component {
             groupData: {},
             adsData: {},
             pagesData: {},
+            postsData: {},
             files: "",
             setFiles: ""
 
@@ -52,6 +53,34 @@ export default class UploadFile extends React.Component {
         };
       };
     
+      handleChangePostsData = e => {
+        const fileReader = new FileReader();
+        fileReader.readAsText(e.target.files[0], "UTF-8");
+        fileReader.onload = e => {
+          console.log("e.target.result", e.target.result);
+          this.setState({postsData: e.target.result});
+          localStorage.setItem('postsState', e.target.result);
+        //   let ogString = JSON.stringify(e.target.result)
+        //   let count = 1;
+        // //   while (ogString.length > 5200000) {
+        //       let string1 = ogString.substring(0, 5200000);
+        //       //let string2 = JSON.stringify(e.target.result).substring(5199999, JSON.stringify(e.target.result).length);
+        //       let key = "postsState" + count;
+        //       localStorage.setItem(key, string1);
+        //       console.log(string1.substring(string1.length - 10, string1.length - 1))
+        //      // localStorage.setItem('postsState2', string2);
+        //      console.log(ogString)
+        //      ogString = ogString.substring(5200000 * count, (5200000 * count) + 5200000);
+        //      count++;
+
+        //   }
+        //   let finalString = ogString.substring(0, ogString.length);
+        //   let finalKey = "postsState" + (count+1);
+        //   localStorage.setItem(finalKey, finalString);
+        //   localStorage.setItem("count", count)
+        
+        };
+      };
 
    
 
@@ -76,6 +105,11 @@ export default class UploadFile extends React.Component {
                 <div>
                     <h5>facebook-[your-username] > likes_and_reactions > pages.json</h5>
                     <input className="file-upload" id="group" type="file" onChange={this.handleChangePagesData} />
+                </div>
+
+                <div>
+                    <h5>facebook-[your-username] > likes_and_reactions > posts_and_comments.json</h5>
+                    <input className="file-upload" id="group" type="file" onChange={this.handleChangePostsData} />
                 </div>
 
                 <button className="nxt-btn">
