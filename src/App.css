@@ -344,8 +344,12 @@ div.tooltip {
   margin-top: 30px;
 }
 
-.exportDesc p {
+.export p {
   font-size: 20pt;
+}
+
+.groupDescript {
+  margin-top: 30px;
 }
 
 .next-steps-next-btn {
@@ -355,4 +359,8 @@ div.tooltip {
 
 .react-tabs__tab {
   position:inherit;
+}
+
+.likesbar {
+  margin-top: 30px;
 }

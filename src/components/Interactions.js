@@ -21,7 +21,7 @@ export default class Interactions extends React.Component {
                     <div className='groupmap'>
                         <GroupTreemap className='groupTreemap' />
 
-                        <p>
+                        <p className="groupDescript">
                                 The treemap above shows proportionally how many times you have interacted 
                                 with each of your Facebook groups. Hover over each section to see the exact 
                                 number of times you have interacted with each Facebook group!
@@ -30,6 +30,10 @@ export default class Interactions extends React.Component {
 
                     <div className="likesbar">
                         <LikesBarchart />
+
+                        <p>
+                            The barchart above shows how many times you clicked each of the different reactions for all the posts and comments you reacted to.
+                        </p>
                     </div>
 
                    

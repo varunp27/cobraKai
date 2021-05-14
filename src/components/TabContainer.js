@@ -20,7 +20,7 @@ export default class TabContainer extends React.Component {
           <Tabs>
           <TabList>
             <Tab style= {{position: 'inherit'}}>Interactions</Tab>
-            <Tab style= {{position: 'inherit'}}>Usage</Tab>
+  
             <Tab style= {{position: 'inherit'}}>Ads</Tab>
           </TabList>
       
@@ -31,9 +31,7 @@ export default class TabContainer extends React.Component {
           
         
           </TabPanel>
-          <TabPanel>
-            <h2>Any content 2</h2>
-          </TabPanel>
+          
           <TabPanel>
             <h2>Compare Frequent Words in your Ads and Page Likes</h2>
             <AdsWordCloud/>

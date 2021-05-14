@@ -238,8 +238,10 @@ export default class LikesBarchart extends React.Component {
             <div id='barChart'>
                 <BarChart axesProps={axesProps}
                           data={reaction_count_array}
-                          colorScale={colorScale} />
-                <svg id='likesChart'></svg>
+                          colorScale={colorScale} 
+                          handleBarHover={handleBarHover}
+                          handleBarClick={handleBarClick} />
+                
             </div>
         )
     }
