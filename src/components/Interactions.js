@@ -1,7 +1,7 @@
 import React from "react";
 import GroupTreemap from "./GroupTreemap"
 import { exportComponentAsJPEG, exportComponentAsPDF, exportComponentAsPNG } from 'react-component-export-image';
-import LikesBarchart from "./LikesBarchart";
+import LikesBarChart from "./LikesBarChart";
 
 export default class Interactions extends React.Component {
 
@@ -29,7 +29,7 @@ export default class Interactions extends React.Component {
                     </div>
 
                     <div className="likesbar">
-                        <LikesBarchart />
+                        <LikesBarChart />
 
                         <p>
                             The barchart above shows how many times you clicked each of the different reactions for all the posts and comments you reacted to.
