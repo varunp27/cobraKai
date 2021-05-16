@@ -56,10 +56,26 @@ body, main {
 .aboutus-body {
   margin-left: 20px;
   margin-right: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+  margin-bottom: 50px;
   padding-top: 105px;
+  padding-left: 20px;
   background-color: 	#F5F5F5;
   height: 100vh;
+}
+
+#help {
+  padding-bottom: 30px;
+}
+
+.aboutus-body iframe {
+  margin-bottom: 10px;
+  border-radius: 5pt;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.aboutus-body p {
+  font-size: 14pt;
 }
 
 #next-steps-body {
@@ -81,12 +97,6 @@ body, main {
   font-size: 16pt;
   font-weight: 300;
   position: relative;
-}
-
-
-
-.bottom-aboutus {
-  padding-bottom: 50px;
 }
 
 .tabs-body {

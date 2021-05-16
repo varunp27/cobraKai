@@ -3,7 +3,7 @@ import * as d3 from "d3";
 import {BarChart} from 'react-d3-chart-graphs'
 import { DefaultDelimiter } from 'papaparse';
 
-export default class LikesBarchart extends React.Component {
+export default class LikesBarChart extends React.Component {
     constructor(props){
         super(props);
         // this.state = {
