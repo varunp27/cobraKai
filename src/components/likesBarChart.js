@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import * as d3 from "d3";
 import {BarChart} from 'react-d3-chart-graphs'
+import { DefaultDelimiter } from 'papaparse';
 
 export default class LikesBarchart extends React.Component {
     constructor(props){
@@ -207,7 +208,30 @@ export default class LikesBarchart extends React.Component {
         };
 
         const handleBarHover = (item) => {
-            console.log('hovered', item);
+            let svg = d3.select('#barChart');
+            let svg2 = svg.selectAll("rect");
+            console.log(svg);
+            if(item != null) {
+                svg2.on("mouseover", function(d) {
+                    console.log("D is: " + d.target.title);
+                    d3.select(this).attr('opacity', '0.5');
+                    tooltip
+                  .style("visibility", "visible") // Make tooltip visible
+                  // Add text
+                  .html(` 
+                    <div>Reaction: ${item.title}</div>
+                    <div>Interacted ${item.value} times</div>
+                  `);
+                }).on("mousemove", function(e) {
+                    tooltip
+                      .style("top", e.pageY - 10 + "px")
+                      .style("left", e.pageX + 10 + "px");
+                    })
+                .on("mouseleave", function(d) {
+                    d3.select(this).attr('opacity', '1');
+                    tooltip.style("visibility", "hidden"); // Hide visibility
+                });
+            }
         };
     
         const handleBarClick = (item) => {
@@ -225,6 +249,8 @@ export default class LikesBarchart extends React.Component {
                 xAxis: 20,
                 yAxis: 20,
             }
+
+        
             //ticksCount: 6,
             // tickFormat: {
             //     xAxis: function(value) {
@@ -232,6 +258,21 @@ export default class LikesBarchart extends React.Component {
             //     },
             // },
         };
+
+        const tooltip = d3
+          .select("body")
+          .append("div")
+          .style("position", "absolute")
+          .style("visibility", "hidden") // Default should be hidden until hovered over
+          .style("background", "white")
+          .style("border-radius", "5pt")
+          .style("color", "black")
+          .style("border", "1pt solid #3BEAD1")
+          .style("font-family", "sans-serif")
+          .style("font-size", "25px")
+          .style("line-height", "25px")
+          .style("padding", "10px 10px")
+          .style("visibility", "hidden");
 
 
         return(
