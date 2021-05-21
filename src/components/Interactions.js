@@ -1,7 +1,7 @@
 import React from "react";
 import GroupTreemap from "./GroupTreemap"
 import { exportComponentAsJPEG, exportComponentAsPDF, exportComponentAsPNG } from 'react-component-export-image';
-import LikesBarChart from "./LikesBarChart";
+import LikesBarChart from "./likesBarChart";
 
 export default class Interactions extends React.Component {
 
